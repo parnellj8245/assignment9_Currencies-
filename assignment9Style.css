@@ -1,0 +1,49 @@
+body {
+	background-color: black;
+}
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	text-shadow: 2px 2px blue;
+}
+h4 {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 2px 2px blue;
+}
+h5 {
+	color: white;
+	font-size: 30px;
+}
+table {
+	border: 2px solid black;
+	border-radius: 30px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+td{
+	border-top-style: solid;
+	border-top-color: blue;
+	border-bottom-style: solid;
+	border-bottom-color: blue;
+	width : 50%;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+img {
+	width : 30%;
+}
+button {
+	margin: 50px;
+}
+legend {
+	color: white;
+}
+label {
+	color: white;
+}

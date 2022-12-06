@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment 9</title>
+		<link href="assignment9style.css" rel="stylesheet" />
+		<script src="watchlistForm.js"></script>
+	</head>
+	<body background="bBackground.png">
+	<h1>Sheckel Watchlist</h1>
+	<h4>Create a personalized watchlist of the top sheckel currencies!</h4>
+	<h5>Not real. This is a school project.</h5>
+	
+	<form name="watchlistForm" action="watchlist.php" method="POST" >
+	<table>
+		<tr>
+			<td>
+				<img src="RockScheckel/overview.png" alt="RockScheckel">	
+			</td>
+			<td>
+				RockScheckel<br>
+				ROKS<br>
+				<a href="currencyDetail.php?name=RockScheckel">Details</a><br>
+				
+			</td>
+			<td>
+				<label for="rock">Add to watchlist: </label>
+				<input type='checkbox' name='items[ROKS]' value='8.93' id="rock" class="currencies"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="LiteScheckel/overview.png" alt="LiteScheckel">
+			</td>
+			<td>
+				LiteScheckel<br>
+				LITS<br>
+				<a href="currencyDetail.php?name=LiteScheckel">Details</a><br>
+			</td>
+			<td>
+				<label for="lite">Add to watchlist: </label>
+				<input type='checkbox' name='items[LITS]' value='1203.45' id="lite" class="currencies"/>
+			</td>
+		<tr>
+			<td>
+				<img src="RingScheckel/overview.png" alt="RingScheckel">
+			</td>
+			<td>
+				RingScheckel<br>
+				RNGS<br>
+				<a href="currencyDetail.php?name=RingScheckel">Details</a><br>
+			</td>
+			<td>
+				<label for="ring">Add to watchlist: </label>
+				<input type='checkbox' name='items[RNGS]' value='453.35' id="ring" class="currencies"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="ArmourScheckel/overview.png" alt="ArmourScheckel">
+			</td>
+			<td>
+				ArmourScheckel<br>
+				ARMS<br>
+				<a href="currencyDetail.php?name=ArmourScheckel">Details</a><br>
+			</td>
+			<td>
+				<label for="armour">Add to watchlist: </label>
+				<input type='checkbox' name='items[ARMS]' value='201.45' id="armour" class="currencies"/>
+			</td>			
+		</tr>
+		<tr>
+			<td>
+				<img src="IceScheckel/overview.png" alt="IceScheckel">
+			</td>
+			<td>
+				IceSheckel<br>
+				IS<br>
+				<a href="currencyDetail.php?name=IceScheckel">Details</a><br>
+			</td>
+			<td>
+				<label for="ice">Add to watchlist: </label>
+				<input type='checkbox' name='items[IS]' value='0.211' id="ice" class="currencies"/>
+			</td>
+		</tr>
+	</table>
+	<fieldset>
+			<legend>Give your watchlist a personalized name!</legend>
+			<label for="wName" id="wNameLabel">Watchlist Name:</label>
+			<input type="text" name="wName" id="wName" />
+			<button type="button" onclick="submitWatchlist()">Create List</button>
+	</fieldset>
+	</form>
+	</body>
+</html>
